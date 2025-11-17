@@ -140,11 +140,7 @@ $docker run --rm -d \
 
 # When you edit src/App.tsx, the browser refreshes automatically.
 
-# Summary
-Mode	    File Used	     Purpose	                                   Command
-Production	Dockerfile	     Build optimized React app, serve via Nginx	   docker build -t react-app:v1 .
 
-Development	Dockerfile.dev	 Live reload, Fast Refresh	                   docker run -v ./src:/app/src react-app:v2
 
 
 

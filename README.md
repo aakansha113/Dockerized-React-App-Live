@@ -84,29 +84,29 @@ react-app/
     ├── index.tsx
 
 # 1. Create the React + TypeScript Project
-
+```
 $mkdir react-app
 
 $cd react-app
 
 $npx create-react-app --template typescript react-app
-
+```
 # Move into the generated folder:
-
+```
 $cd react-app
-
+```
 # Start locally to verify:
-
+```
 $npm start
-
+```
 # Build the React app:
-
+```
 $npm run build
-
+```
 # test build output locally:
-
+```
 $npx http-server@14.1.1 build
-
+```
 # 2. Build the Dockerfile:
 
 Dockerfile.dev (Used for Development)
@@ -114,30 +114,30 @@ Dockerfile.dev (Used for Development)
 Dockerfile  (Production)
 
 # Build Production Image
-
+```
 $docker build -t react-app:v1 .
-
+```
 # Run Production Container
-
+```
 $docker run --rm -d -p 3000:80 react-app:v1
-
+```
 Access:
 👉 http://localhost:3000
 
 # 3. Dockerfile.dev (Development with Live Reload)
 
 # Build Dev Image
-
+```
 $docker build -t react-app:v2 -f Dockerfile.dev .
-
+```
 # Run with Live Reload (Important):
-
+```
 $docker run --rm -d \
   -p 3000:3000 \
   -v ./public:/app/public \
   -v ./src:/app/src \
   react-app:v2
-
+```
 Access: 👉 http://localhost:3000
 
 # When you edit src/App.tsx, the browser refreshes automatically.

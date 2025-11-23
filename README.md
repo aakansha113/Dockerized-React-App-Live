@@ -85,27 +85,27 @@ react-app/
 
 ### 1. Create the React + TypeScript Project
 ```
-$mkdir react-app
+mkdir react-app
 
-$cd react-app
+cd react-app
 
-$npx create-react-app --template typescript react-app
+npx create-react-app --template typescript react-app
 ```
 ### Move into the generated folder:
 ```
-$cd react-app
+cd react-app
 ```
 ### Start locally to verify:
 ```
-$npm start
+npm start
 ```
 ### Build the React app:
 ```
-$npm run build
+npm run build
 ```
 ### test build output locally:
 ```
-$npx http-server@14.1.1 build
+npx http-server@14.1.1 build
 ```
 ### 2. Build the Dockerfile:
 
@@ -115,11 +115,11 @@ Dockerfile  (Production)
 
 ### Build Production Image
 ```
-$docker build -t react-app:v1 .
+docker build -t react-app:v1 .
 ```
 ### Run Production Container
 ```
-$docker run --rm -d -p 3000:80 react-app:v1
+docker run --rm -d -p 3000:80 react-app:v1
 ```
 Access:
 👉 http://localhost:3000
@@ -133,11 +133,11 @@ git clone https://github.com/aakansha113/Dockerized-React-App-Live.git
 
 ## Build Dev Image
 ```
-$docker build -t react-app:v2 -f Dockerfile.dev .
+docker build -t react-app:v2 -f Dockerfile.dev .
 ```
 ## Run with Live Reload (Important):
 ```
-$docker run --rm -d \
+docker run --rm -d \
   -p 3000:3000 \
   -v ./public:/app/public \
   -v ./src:/app/src \

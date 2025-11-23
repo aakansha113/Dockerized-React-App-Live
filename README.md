@@ -2,7 +2,7 @@
 This project demonstrates how to run a React application inside Docker with live code reloading.
 Any changes made inside src/App.tsx (or any file in src/) will automatically refresh in the browser.
 
-# Features:
+### Features:
 
 ⦁	Fully Dockerized React app.
 
@@ -71,7 +71,7 @@ Any changes made inside src/App.tsx (or any file in src/) will automatically ref
                    http://localhost:3000
                     (Optimized Production UI)
 
-## Project Structure
+### Project Structure
 react-app/
 │
 ├── Dockerfile      Production build (Nginx)
@@ -83,7 +83,7 @@ react-app/
     ├── App.tsx
     ├── index.tsx
 
-## 1. Create the React + TypeScript Project
+### 1. Create the React + TypeScript Project
 ```
 $mkdir react-app
 
@@ -91,39 +91,44 @@ $cd react-app
 
 $npx create-react-app --template typescript react-app
 ```
-## Move into the generated folder:
+### Move into the generated folder:
 ```
 $cd react-app
 ```
-## Start locally to verify:
+### Start locally to verify:
 ```
 $npm start
 ```
-## Build the React app:
+### Build the React app:
 ```
 $npm run build
 ```
-# test build output locally:
+### test build output locally:
 ```
 $npx http-server@14.1.1 build
 ```
-## 2. Build the Dockerfile:
+### 2. Build the Dockerfile:
 
 Dockerfile.dev (Used for Development)
 
 Dockerfile  (Production)
 
-## Build Production Image
+### Build Production Image
 ```
 $docker build -t react-app:v1 .
 ```
-## Run Production Container
+### Run Production Container
 ```
 $docker run --rm -d -p 3000:80 react-app:v1
 ```
 Access:
 👉 http://localhost:3000
 
+### 📥 Clone This Repository
+#### To clone this portfolio on your local system, run:
+```
+git clone https://github.com/aakansha113/Dockerized-React-App-Live.git
+```
 ## 3. Dockerfile.dev (Development with Live Reload)
 
 ## Build Dev Image
@@ -142,6 +147,8 @@ Access: 👉 http://localhost:3000
 
 ### When you edit src/App.tsx, the browser refreshes automatically.
 
+### ⭐ Show Your Support
+#### If you like this portfolio, feel free to ⭐ star the repo!
 
 
 

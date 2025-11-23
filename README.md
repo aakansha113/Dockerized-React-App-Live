@@ -109,9 +109,9 @@ npx http-server@14.1.1 build
 ```
 ### 2. Build the Dockerfile:
 
-Dockerfile.dev (Used for Development)
+-Dockerfile.dev (Used for Development)
 
-Dockerfile  (Production)
+-Dockerfile  (Production)
 
 ### Build Production Image
 ```

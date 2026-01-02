@@ -71,7 +71,8 @@ Any changes made inside src/App.tsx (or any file in src/) will automatically ref
                    http://localhost:3000
                     (Optimized Production UI)
 
-### Project Structure
+###  📁 Project Structure
+```
 react-app/
 │
 ├── Dockerfile      Production build (Nginx)
@@ -82,7 +83,7 @@ react-app/
 └── src/
     ├── App.tsx
     ├── index.tsx
-
+```
 ### 1. Create the React + TypeScript Project
 ```
 mkdir react-app
